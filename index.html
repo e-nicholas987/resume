@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,45 +24,45 @@
                 </div>
                 <div class="logo">
                     <a>
-                        <span>My</span>
-                        <span>Resume</span>
+                        <span>Emeka</span>
+                        <span>Iwuanyanwu</span>
                     </a>
                 </div>
 
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Education</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Featured Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#about" onclick="closeMenu()">About</a></li>
+                        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                        <li><a href="#work" onclick="closeMenu()">Work</a></li>
+                        <li><a href="#edu" onclick="closeMenu()">Education</a></li>
+                        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
                     </ul>
                 </nav>
 
                 <footer>
 
                     <div class="socials">
-                        <a href="">
-    
+                        <!-- <a href="https://twitter.com/emeka987">
+
                             <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="">
+                        </a> -->
+                        <a href="https://twitter.com/emeka987">
                             <i class="fab fa-twitter"></i>
-    
+
                         </a>
-                        <a href="">
+                        <a href="https://github.com/e-nicholas987/">
                             <i class="fab fa-github"></i>
-    
+
                         </a>
-                        <a href="">
-    
+                        <a href="https://linkedin.com/in/emeka-nicholas-b110a723a">
+
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
-    
+
                     <span>+234 805 053 0712</span>
-                    <span>emeka.nich@gmail.com</span>
+                    <span>emeka.c.nicholas@gmail.com</span>
                     <span></span>
             </aside>
 
@@ -69,52 +71,174 @@
 
                 <section class="hero">
                     <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars"></i></div>
-                    <div class="container">
+                    <div class="container fade-in">
                         <div class="intro-flex">
                             <div class="salutation">
-                                Hello Everyone, I am
+                                Hello, I am
                             </div>
                             <div class="name">
                                 Emeka Iwuanyanwu
                             </div>
                             <div class="role">
-                                Front-end Developer
+                                Frontend Developer
                             </div>
+                            <a class='resume-link' href="#about">view my portfolio</a>
                         </div>
                     </div>
-                   
+
 
                 </section>
-                <section class="resume-sec about">
+
+
+
+                <section class="resume-sec about" id="about">
                     <article>
                         <h3 class="sec-title">
                             About Me
                         </h3>
-                        <div>
-                            Front-end Developer with 1 year of experience in blending the art of design with skill of
-                            programming to deliver an immersive user experience through efficient website development,
-                            proactive feature optimization, and relentless debugging.
+                        <div class="fade-in">
+                            Frontend Developer with over 2 years of experience. Passionate about UI design with an eye
+                            for detail. Skilled in using web frameworks such as ReactJs in building user-friendly web
+                            interfaces.
                         </div>
                     </article>
                 </section>
-                <section class="resume-sec work">
+                <section class="resume-sec projects" id="projects">
+                    <h3 class="sec-title">
+                        Projects
+                    </h3>
+                    <div class="container fade-in">
+                        <div class="card">
+                            <img src="/images/em-health-screenshot.png" alt="em-health">
+                            <div class="links">
+                                <a href="/emhealthpeview.html" class="demo-btn">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </a>
+                                <a href="#" class="code-btn">
+                                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    Private Code
+                                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                            <span class="title">EM Health Global: Revotionalizing patient-doctor appointments in
+                                Nigerian hospitals.</span>
+                        </div>
+                        <div class="card">
+                            <img src="/images/budget-calc.png" alt="budget-calc">
+                            <div class="links">
+                                <a href="https://budget-calc-svlete.netlify.app " class="demo-btn" target="_blank">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </a>
+                                <a href="https://github.com/e-nicholas987/budget-calc" class="code-btn">
+                                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    Code
+                                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                            <span class="title">Budget calculator</span>
+                        </div>
+                        <div class="card">
+                            <img src="/images/matching-card.png" alt="matching-card" target="_blank">
+                            <span class="title">Matching card game</span>
+                            <div class="links">
+                                <a href="https://matching-card-game-vanilla-js.netlify.app" class="demo-btn"
+                                    target="_blank">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </a>
+                                <a href="https://github.com/e-nicholas987/matching-card" class="code-btn">
+                                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    Code
+                                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <img src="/images/quiz-app.png" alt="quiz-app" target="_blank">
+                            <span class="title">Api Generated Quiz App </span>
+                            <div class="links">
+                                <a href="https://svelte-quiz-app.netlify.app
+
+                                " class="demo-btn">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </a>
+                                <a href="https://github.com/e-nicholas987/quiz-app" class="code-btn">
+                                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    Code
+                                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/barter-right.png" alt="budget-calc">
+                            <span class="title">Barter right: An eCommerce website for bartering items.</span>
+                            <div class="links">
+                                <a href="https://barter-right.herokuapp.com/" class="demo-btn">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </a>
+                                <a href="https://github.com/e-nicholas987/trade-by-barter/" class="code-btn">
+                                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    Code
+                                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/images/zuri-chat.png" alt="budget-calc">
+                            <span class="title">Zuri-Chat: A language agnostic application that makes communicating with
+                                your team or organization faster, easier and more fun.</span>
+                            <div class="links">
+                                <a href="https://zuri.chat/" class="demo-btn">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </a>
+                                <a href="https://github.com/zurichat/zc_main/" class="code-btn">
+                                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    Code
+                                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="card">
+                            <img src="/images/zuri-chess-plugin.png" alt="zuri-chess-plugin">
+                            <span class="title">Zuri chesss plugin: A web based recreational board game that can be
+                                played between two players.</span>
+                            <div class="links">
+                                <a href="https://github.com/zurichat/zc_plugin_chessboard/" class="demo-btn">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </a>
+                                <a href="https://github.com/e-nicholas987/trade-by-barter/" class="code-btn">
+                                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    Code
+                                    <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+                <section class="resume-sec work" id="work">
                     <article>
                         <h3 class="sec-title">
                             Work History
                         </h3>
 
-                        <ul class="timeline">
+                        <ul class="timeline fade-in">
                             <li>
                                 <div class="location">
-                                    <span class="duration">June 2019 - present</span>
-                                    <span class="org">Freelance</span>
-                                    <span class="role">Front-end Developer</span>
+                                    <span class="duration">December 2021 - present</span>
+                                    <span class="org">EM Global Health, Lagos</span>
+                                    <span class="role">Frontend Developer</span>
                                 </div>
 
                                 <div class="desc">
                                     <ul>
-                                        <li> Building websites with Wordpress</li>
-                                        <li> Collaborating on open source projects.
+                                        <li> Building a healthcare management application that helps
+                                            hospitals schedule and manage patient-doctor appointments.
+                                        </li>
+                                        <li> Responsible for the frontend development, using ReactJs and chart libraries
+
+                                        </li>
+                                        <li>Work closely with the designer to ensure that user flows and mock-ups are
+                                            correctly represented.
                                         </li>
                                     </ul>
                                 </div>
@@ -122,7 +246,83 @@
                             </li>
                             <li>
                                 <div class="location">
-                                    <span class="duration">April 2018 - September 2018</span>
+                                    <span class="duration">August 2021 - November 2021</span>
+                                    <span class="org">HNG Internship 8 (Finalist), Remote</span>
+                                    <span class="role">Frontend Developer</span>
+                                </div>
+
+                                <div class="desc">
+                                    <ul>
+                                        <li> Collaborated with a team of designers and developers to build Zuri Chat - a
+                                            Slack web clone that allows people to collaborate and communicate remotely.
+
+                                        </li>
+                                        <li> Built a multiplayer chess game plug-in for Zuri Chat marketplace.
+                                        </li>
+                                        <li>Worked closely with the backend developer to integrate a live chess game
+                                            spectator
+                                            mode and real-time messaging using centrifugo RTC.
+
+                                        </li>
+                                        <li>Converted UI mockups to interactive web interfaces using ReactJs and CSS and
+                                            integrated RESTful APIs using Axios library.
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="location">
+                                    <span class="duration">April 2021 - July 2021</span>
+                                    <span class="org">Zuri Internship (Finalist), Remote</span>
+                                    <span class="role">Frontend Developer</span>
+                                </div>
+
+                                <div class="desc">
+                                    <ul>
+                                        <li> Collaborated with a team of designers and developers to build Barter Right
+                                            - a trade by barter platform.
+
+                                        </li>
+                                        <li> Led a team of frontend developers, and was responsible for assigning tasks,
+                                            reviewing pull requests, and following up with team members to ensure
+                                            prompt resolution of issues.
+
+                                        </li>
+                                        <li> Converted UI mockups to interactive web interfaces using HTML, CSS and
+                                            JavaScript.
+
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <!-- <li>
+                                <div class="location">
+                                    <span class="duration">January 2019 - December 2020</span>
+                                    <span class="org">Natterbase Ltd, Lagos</span>
+                                    <span class="role">Frontend Developer</span>
+                                </div>
+                                <div class="desc">
+                                    <ul>
+                                        <li> Built interactive component-based interfaces for multiple web applications.
+                                            .</li>
+                                        <li> Shipped new features and fixed bugs on existing projects.
+                                        <li> Created timelines for the product development team.
+
+                                        </li>
+                                        <li> Co-ordinated weekly sprint meetings.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="location">
+                                    <span class="duration">January 2018 - October 2018</span>
                                     <span class="org">Yaba College of Technology, Lagos</span>
                                     <span class="role">Customer Support Assistant</span>
                                 </div>
@@ -141,22 +341,52 @@
                             </li>
                             <li>
                                 <div class="location">
-                                    <span class="duration"> June 2016 - December 2016</span>
+                                    <span class="duration"> February 2016 - August 2016</span>
                                     <span class="org">Cinfores Ltd, port harcourt</span>
                                     <span class="role">Web Developer Intern</span>
                                 </div>
                                 <div class="desc">
                                     <ul>
-                                        <li> Built interactive component-based
-                                            interfaces for multiple web applications.</li>
+                                        <li> Built content management system using HTML, CSS, PHP, and MySQL.</li>
                                         <li> Conducted user testing for company’s
                                             educational enterprise application.
                                         </li>
                                     </ul>
                                 </div>
 
-                            </li>
+                            </li> -->
 
+                            <li>
+                                <div class="location">
+                                    <span class="duration">February 2018 - July 2019</span>
+                                    <span class="org">Gatlin BC, Contonou, Benin</span>
+                                    <span class="role">Sales Manager</span>
+                                </div>
+
+                                <div class="desc">
+                                    <ul>
+                                        <li> Managed the end-to-end logistics cycle for recycling used clothing,
+                                            from procurement, sorting, and distribution, to transport and delivery
+                                            to the customer.
+
+
+                                        </li>
+                                        <li> Coordinated a team of 40 people tasked with sorting clothing imports.
+
+
+                                        </li>
+                                        <li> Improved sales speed by liaising with retailers and encouraging efficiency
+                                            through incentives.
+
+
+
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
                         </ul>
 
                         <div>
@@ -164,16 +394,16 @@
                         </div>
                     </article>
                 </section>
-                <section class="resume-sec edu">
+                <section class="resume-sec edu" id="edu">
                     <article>
                         <h3 class="sec-title">
                             Education
                         </h3>
 
-                        <ul class="timeline">
+                        <ul class="timeline fade-in">
                             <li>
                                 <div class="location">
-                                    <span class="duration">2011 - 2018</span>
+                                    <span class="duration">2011 - 2017</span>
                                     <span class="org">Federal University of Technology, Owerri </span>
                                 </div>
 
@@ -211,11 +441,11 @@
                     </article>
                 </section>
 
-                <section class="resume-sec skills">
+                <section class="resume-sec skills" id="skills">
                     <h3 class="sec-title">
                         SKILLS
                     </h3>
-                    <div class="container">
+                    <div class="container fade-in">
                         <div class="lang">
                             <i class="fab fa-html5"></i>
                             HTML
@@ -233,48 +463,44 @@
                             React
                         </div>
                     </div>
-
-
                 </section>
 
-                <section class="resume-sec contact">
+                <section class="resume-sec contact" id="contact">
                     <h3 class="sec-title">Contact</h3>
-                    <div class="container">
+                    <div class="container fade-in">
                         <div class="box">
                             <span class="title">
                                 stay in touch
                             </span>
                             <div class="content">
-    
-                                <span>emeka.nich@gmail.com</span>
-                                <span>+234 805 053 0712</span>
+
+                                <a href="maito:e.c.nicholas@gmail.com" class="links">emeka.c.nicholas@gmail.com</a>
+                                <a href="tel:+2348050830712" class="links">+234 805 053 0712</a>
+
                             </div>
                         </div>
                         <div class="box">
                             <span class="title">
                                 socials
                             </span>
-                            <ul class="content">
-                                <li> <a href="">LinkedIn</a></li>
-                                <li> <a href="">Twitter</a> </li>
-                                <li> <a href="">Github</a> </li>
+                            <ul class="content links">
+                                <li> <a href="https://linkedin.com/in/emeka-nicholas-b110a723a ">LinkedIn</a></li>
+                                <li> <a href="https://twitter.com/emeka987">Twitter</a> </li>
+                                <li> <a href="https://github.com/e-nicholas987/">Github</a> </li>
                             </ul>
-    
+
                         </div>
                         <div class="box">
                             <span class="title">
                                 address
                             </span>
-                            <span class="content">No. 19 Road N, Forthright Gardens
-                                Magboro, Ogun
-                                Nigeria
+                            <span class="content">Lagos, Nigeria
                             </span>
                         </div>
                     </div>
-           
+
 
                 </section>
-
             </main>
         </div>
     </div>
@@ -283,4 +509,5 @@
 </body>
 
 <script src='main.js'></script>
+
 </html>
